@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(225, 237, 225);
+    background-size: cover;
+    color: whitesmoke;
+    text-align: center;
+    font-size: large;
+}
+
+section {
+    background-color: rgb(31, 59, 31);
+    width: 435px;
+    margin: 0 auto;
+    padding: 15px 35px 35px 35px; 
+}
+
+h1 {
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+span {
+    background-color: rgb(229, 148, 148);
+}
+
+input[type="number"]:read-only {
+    background-color: rgb(144, 141, 141);
+    border: 1px outset rgb(57, 59, 57);
+}
+input::placeholder {
+    font-weight: bold;
+    color: rgb(10, 9, 9);
+}
+
+input, textarea {
+    display: block;
+    width: 80%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(176, 47, 47);
+    border-left-color: rgb(229, 148, 148);
+    padding: 7px;
+}
+
+input[type="submit"] {
+    width: unset;
+    margin-top: 7px;
+    padding: 7px 20px;
+    background-color: rgb(24, 113, 72);
+    color: rgb(238, 248, 248);
+    border: 1px outset grey;
+    margin-left: 107px;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="checkbox"] {
+    width: 10%;
+    margin: 3px 0;
+    padding: 0;
+    border: initial;
+}
+
+#age {
+    width: 20%;
+    margin-left: 120px;
+}
+
+
+
