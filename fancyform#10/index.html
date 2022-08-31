@@ -8,34 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <header>
         <h1>Register to Fancy Form</h1>
+    </header>
+    <main>
         <p>All fields are <span>required</span> unless marked as "optional"</p>
-        <form action="/index.html">    
-            <label for="number">Your unique ID that you can't change</label>
-            <input type="number" name="number" id="number" placeholder="YBX0123" readonly>
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-
-            <label for="password">Password:</label> 
-            <input type="password" name="password" id="password"> 
-            
-            <label for="age">Age:</label> 
-            <input type="number" name="age" id="age" required
-            minlength="1" maxlength="3">   
-            
-            <label for="textarea">Tell us a little about yourself(optional):</label>
-            <textarea name="text"></textarea>
-
-            <div class="checkbox">
-                <input type="checkbox" name="Iagree" id="checkbox">
-                <label for="checkbox">I agree with Terms & Conditions</label>
-            </div>
-        
-            <input type="submit" value="Register">
+        <form action="/index.html" method="POST"> 
+            <section>
+                <label for="user-id">Your unique ID that you can't change</label>
+                <input type="text" name="user-id" id="user-id" value="YBX0123" readonly>
+            </section>   
+            <section>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </section>
+            <section>
+                <label for="password">Password:</label> 
+                <input type="password" name="password" id="password" required> 
+            </section>
+            <section>
+                <label for="age">Age:</label> 
+                <input type="number" name="age" id="age" min="18" max="63" required>   
+            </section>
+            <section>
+                <label for="textarea">Tell us a little about yourself <span>(optional):</span></label>
+                <textarea name="about" id="about"></textarea>
+            </section>
+            <section>
+                <input type="checkbox" name="terms" id="terms" value="agree" required>
+                <label for="terms">I agree with Terms & Conditions</label>
+            </section>
+            <input type="submit" name="submit" value="Register">
         </form>
-    </section>
-    
+    </main>   
 </body>
 </html>
