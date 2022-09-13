@@ -3,72 +3,185 @@ html {
     height: 100%;
 }
 body {
+    background-image: linear-gradient(#1E1E1E,rgb(146, 69, 69));
     margin: 0;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 header {
-    background-color: aquamarine;
-    height: 100px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
 }
-.content {
-    height: 250px;
-    background-color: blanchedalmond;
+main {
+    display: flex;
 }
-main div:not(:first-child) {
-    height: 100px;
+.wrapper {
+    min-width: 310px;
+    height: 533px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 40px;
 }
-.sign-up {
-    background-color: blueviolet;
+h2,
+.input-cover {
+    display: none;
 }
-.feature-one {
-    background-color: beige;
+.input-layout {
+    display: flex;
+    flex-direction: column;
+    margin: 0 53px;
+    gap: 25px;
 }
-.feature-two {
-    background-color: brown;
+
+.input-button {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin-top: 50px;
+    justify-content: center;
 }
-.feature-three {
-    background-color: azure;
+.input-button button {
+    width: 97px;
+    height: 30px;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
 }
+.input-button .red,
+.button {
+    background-color: #FF0036;
+    color: #fff;
+    border: none;
+}
+.input-button .white {
+    background-color: #fff;
+    color: black;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.button {
+    width: 204px;
+    height: 45px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+   
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.input-list {
+    display: flex;
+    flex-direction: column;
+}
+.form-input {
+    width: 204px;
+    height: 45px;
+    border: #fff;
+    background: linear-gradient(180deg, rgba(5, 5, 5, 0.04) 0%, rgba(5, 5, 5, 0) 100%);
+    border-bottom: 1px solid #FF0036;
+    border-radius: 5px 5px 0px 0px;
+   
+}
+.input-link a {
+    color: #FF0036;
+    float: right;
+}
+.input-p {
+    display: flex;
+    justify-content: center;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.social-button {
+    display: flex;
+    gap: 5px;
+}
+.social-button img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 45px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+footer a {
+    color: #fff;
+}
+ul {
+    display: flex;
+    gap: 9px;
+    list-style: none;
+    padding: 0;
+}
+ 
 
 @media only screen and (min-width: 678px) {
     .wrapper {
-        display: flex;
-        flex-wrap: wrap;
+        max-width: 960px;
+        margin: 0 auto;
     }
-    .content {
-        flex-basis: 100%;
-    }
-    .wrapper > *:not(.content) {
+    .input-layout {
         flex-basis: 50%;
+        flex-wrap: wrap;
+        margin: 0 92px;
+    }
+    h2 {
+        display: flex;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 70px;
+    }
+    .input-button {
+        justify-content: flex-start;
+        margin-top: 0;
+    }
+    .input-link {
+        display: flex;
+    }
+    .input-p {
+        align-items: center;
+       
+        
+    }
+    .social-button {
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 3;
+
+    }
+    .input-cover {
+        display: flex;
+        align-items: center;
+        flex-basis: 50%;
+        
     }
     
+    .input-cover img {
+        width: 285px;
+        height: 285px;
+        padding-right: 10px;
+    }
 }
-@media only screen and (min-width: 1200px) {
+    
+
    
-    .content,
-    .sign-up {
-        flex-basis: 100% !important;
-    }
-    .feature-one,
-    .feature-two,
-    .feature-three {
-        flex-basis: calc(100%/3) !important;
-    }
-    .feature-one {
-        order: 1;
-    }
-    .feature-two {
-        order: 3;
-    }
-    .feature-three {
-        order: 2;
-    }
-    .sign-up {
-        order: 4;
-    }
-    .content {
-        order: 5;
-    }
-}
+  
+  
+   
     
  
 
