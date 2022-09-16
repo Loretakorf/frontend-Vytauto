@@ -3,6 +3,9 @@ html {
     height: 100vh;
     font-family: "Inter",sans-serif;
 }
+* {
+    box-sizing: border-box;
+}
 body {
     background: linear-gradient(181.29deg, #050505 25.32%, #770019 96.27%);
 }
@@ -10,7 +13,9 @@ button {
     cursor: pointer;
 }
 .with-layout {
-    margin: 0 40px;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 960px;
 }
 
 .heading {
@@ -19,8 +24,7 @@ button {
 }
 
 .container {
-    min-height: 533px;
-    margin: 0 40px;
+    
     background-color: #fff;
     border-radius: 40px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
@@ -61,6 +65,7 @@ button {
     display: flex;
     flex-flow: column nowrap;
     row-gap: 40px;
+    width: 204px;
 }
 .login-block {
     display: flex;
@@ -119,6 +124,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 40px;
+   
 }
 
 .or-label {
@@ -130,87 +136,89 @@ button {
 
 .social-login {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 204px;
+    width: 100%;
+    align-self: center;
 }
 .social-login img {
     width: 30px;
     height: 30px;
+    flex-grow: 0;
 }
-.social-login  a {
-    display: flex;
-    justify-content: center;
-    align-items:center;
+.social-button {
     width: 45px;
     height: 45px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 45px;
-    background: #FFFFFF;
+    cursor: pointer;
 }
-.with-layout footer {
-    display: flex;
-    /* justify-content: center; */
-}
-footer a {
-    color: #fff;
-    font-size: 12px;
-    line-height: 15px;
-}
-ul {
-    display: flex;
-    list-style: none;
-    padding-top: 20px;
+.smaller-icon {
+    width: 25px;
+    height: 25px;
 }
 
-h2, .input-cover {
+.foot {
+    color: #fff;
+    font-size: 12px;
+    line-height: 120%;
+}
+.mainfooter {
+    display: flex;
+    align-self: center;
+    gap: 10px;justify-content: space-between;
+    padding: 20px 26px;
+}
+
+.card-header {
+    display: none;
+    margin: 0;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.cover {
     display: none;
 }
 
-@media only screen and (min-width: 678px) {
-    .with-layout {
-        margin: 0 92px;
-    }
+@media only screen and (min-width: 768px) {
     .heading {
         text-align: left;
     }
     .container {
-        max-width: 960px;
-        margin: 0 92px;
+        padding: 70px 92px 92px 100px;
+    
     }
-   
-    h2 {
+    .card-header {
         display: block;
-        font-size: 24px;
-        font-weight: 700;
-        padding-top: 70px;
     }
     .card-content {
         flex-direction: row;
         column-gap: 20px;
-        flex: 1;
-    }
-    .password-login {
-        max-width: 204px;
-    }
-   
-    .social-login {
-        flex-direction: column;
-        justify-content: center;
     }
     .input-cover {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1;
+        justify-content: space-between;
+        
     }
-    
-    .input-cover img {
-        width: 285px;
-        height: 285px;
-        padding-right: 10px;
+
+    .social-login {
+        flex-direction: column;
+        gap: 15px;
+        width: auto;
     }
-    .with-layout ul {
-        justify-content: end;
-        gap: 6px;
+  
+    .cover {
+        display: flex;
+    }
+
+    .mainfooter {
+        justify-content: flex-end;
+        
     }
 }
     

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,51 +12,62 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="heading with-layout">
-        <img src="img/example logo.png" alt="logo">
-    </header>
-    <main class="container with-layout card-content">
-        
-        <form>
-            <h2>Your journey begins here.</h2>
-            <div class="password-login">
-                <div class="button-layout">
-                    <button class="button-small button-primary" type="button">Login</button>
-                    <button class="button-small button-secondary" type="button">Sign up</button>
-                </div>
-                <div class="login-block">
-                    <div class="input-list">
-                        <input type="text" id="email" name="name" placeholder="Enter email or username" class="login-input">
-                        <input type="password" id="password" name="password" placeholder="Enter password" class="login-input">
+    <div class="with-layout">
+        <header class="heading">
+            <img src="img/example logo.png" alt="logo">
+        </header>
+    </div>
+    <div class="with-layout">
+        <main class="container">
+            <h1 class="card-header">Your journey begins here</h1>
+            <div class="input-cover">
+                <div class="card-content">
+                    <form>
+                        <div class="password-login">
+                            <div class="button-layout">
+                                <button class="button-small button-primary" type="button">Login</button>
+                                <button class="button-small button-secondary" type="button">Sign up</button>
+                            </div>
+                            <div class="login-block">
+                                <div class="input-list">
+                                    <input type="text" id="email" name="name" placeholder="Enter email or username"
+                                        class="login-input">
+                                    <input type="password" id="password" name="password" placeholder="Enter password"
+                                        class="login-input">
+                                </div>
+                                <a href="#" class="link">Forgot password?</a>
+                            </div>
+                            <button class="button-medium button-primary" type="submit">Log in</button>
+                        </div>
+                    </form>
+                    <div class="or-label">
+                        <span>OR</span>
                     </div>
-                    <a href="#" class="link">Forgot password?</a>
+                    <div class="social-login">
+                        <a href="#" class="social-button"><img src="icons/facebook-icon.png" alt="facebook"></a>
+                        <a href="#" class="social-button"><img src="icons/google-icon.png" alt="google"></a>
+                        <a href="#" class="social-button"><img src="icons/twitter-button.png" class="smaller-icon"
+                                alt="twitter"></a>
+                        <a href="#" class="social-button"><img src="icons/linkedin-icon.png" class="smaller-icon"
+                                alt="linkedin"></a>
+                    </div>
                 </div>
-                <button class="button-medium button-primary" type="submit">Log in</button>
+                <img src="img/cover.png" class="cover" alt="cover">
             </div>
-        </form>
-        <div class="or-label">
-            <span>OR</span>
-        </div>
-        <div class="social-login">
-            <a href="#"><img src="icons/facebook-icon.png" alt="facebook"></a>
-            <a href="#"><img src="icons/google-icon.png" alt="google"></a>
-            <a href="#"><img src="icons/twitter-button.png" alt="twitter"></a>
-            <a href="#"><img src="icons/linkedin-icon.png" alt=""></a>
-        </div>
-        <div class="input-cover">
-            <img src="img/cover.png" alt="cover">
-        </div>           
-    </main>
-    <footer class="with-layout">
-        <ul>
-            <li><a href="#">F.A.Q</a></li>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Terms of use</a></li>
-            <li><a href="#">Contacts</a></li>     
-        </ul>
-    </footer>
-    
-   
+        </main>
+    </div>
+    <div class="with-layout">
+        <footer>
+            <div class="mainfooter">
+                <a href="#" class="foot">F.A.Q</a>
+                <a href="#" class="foot">Privacy policy</a>
+                <a href="#" class="foot">Terms of use</a>
+                <a href="#" class="foot">Contacts</a>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
