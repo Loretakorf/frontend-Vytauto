@@ -6,68 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="with-layout">
-        <header class="heading">
-            <img src="img/example logo.png" alt="logo">
-        </header>
-    </div>
-    <div class="with-layout">
-        <main class="container">
-            <h1 class="card-header">Your journey begins here</h1>
-            <div class="input-cover">
-                <div class="card-content">
-                    <form>
-                        <div class="password-login">
-                            <div class="button-layout">
-                                <button class="button-small button-primary" type="button">Login</button>
-                                <button class="button-small button-secondary" type="button">Sign up</button>
-                            </div>
-                            <div class="login-block">
-                                <div class="input-list">
-                                    <input type="text" id="email" name="name" placeholder="Enter email or username"
-                                        class="login-input">
-                                    <input type="password" id="password" name="password" placeholder="Enter password"
-                                        class="login-input">
-                                </div>
-                                <a href="#" class="link">Forgot password?</a>
-                            </div>
-                            <button class="button-medium button-primary" type="submit">Log in</button>
-                        </div>
-                    </form>
-                    <div class="or-label">
-                        <span>OR</span>
-                    </div>
-                    <div class="social-login">
-                        <a href="#" class="social-button"><img src="icons/facebook-icon.png" alt="facebook"></a>
-                        <a href="#" class="social-button"><img src="icons/google-icon.png" alt="google"></a>
-                        <a href="#" class="social-button"><img src="icons/twitter-button.png" class="smaller-icon"
-                                alt="twitter"></a>
-                        <a href="#" class="social-button"><img src="icons/linkedin-icon.png" class="smaller-icon"
-                                alt="linkedin"></a>
-                    </div>
+    <header class="container">
+        <h1>Photo Gallery</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper-pair">
+                    <img src="img/photo1.png" class="small-img" alt="photo1">
+                    <img src="img/photo2.png" class="big-img" alt="photo2">
+                </div> 
+                <div class="wrapper-pair">   
+                    <img src="img/photo3.png" class="big-img" alt="photo3">
+                    <img src="img/photo4.png" class="small-img" alt="photo4">
                 </div>
-                <img src="img/cover.png" class="cover" alt="cover">
+                <div class="wrapper-pair">
+                    <img src="img/photo5.png" class="small-img" alt="photo5">
+                    <img src="img/photo6.png" class="big-img" alt="photo6">
+                </div>
+                <div class="wrapper-pair">
+                    <img src="img/photo7.png" class="big-img" alt="photo7">
+                    <img src="img/photo8.png" class="small-img" alt="photo8">
+                </div> 
             </div>
-        </main>
-    </div>
-    <div class="with-layout">
-        <footer>
-            <div class="mainfooter">
-                <a href="#" class="foot">F.A.Q</a>
-                <a href="#" class="foot">Privacy policy</a>
-                <a href="#" class="foot">Terms of use</a>
-                <a href="#" class="foot">Contacts</a>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </main>
 </body>
-
 </html>
