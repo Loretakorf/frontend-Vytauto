@@ -8,12 +8,10 @@ body, html {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    max-width: 1366px;
+    /* max-width: 1366px; */
 }
-/* header, */
-main {
-    margin: 0 auto;
-}
+
+
 .navbar {
     position: sticky;
     top: 0;
@@ -205,9 +203,30 @@ footer {
 }
 .footerfirst {
     background-color: #394149;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-logo {
+    margin-top: 51px;
+}
+footer p {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+}
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    padding: 12px 20px;
 }
 .footersecond {
-    background-color: #1E1E1E;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 33px;
+    min-height: 120px;
 }  
 
   
