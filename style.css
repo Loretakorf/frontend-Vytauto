@@ -6,7 +6,7 @@ body, html {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    max-width: 1366px;
+    /* max-width: 1366px; */
 }
 header {
     background-color: #BF5B5B;
@@ -99,40 +99,32 @@ p {
     flex-basis: 50%;
     flex-wrap: wrap;
 }
-.top-section .wrapper1 {
-    justify-content: flex-end;
-}
 .image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
 }
-.top-section .wrapper1 div {
-    
+.wrapper1 div,
+.wrapper2 div {
     flex-basis: calc(100% / 3);
     height: 50%;
     position: relative;
-    left: 32px;
+  
+}
+.top-section .wrapper1 .paragraph,
+.bottom-section .wrapper2 .paragraph {
+    flex-basis: calc(100% / 3 * 2);
 }
 
-.bottom-section .wrapper1 div {
-    height: 50%;
-    flex-basis: calc(100% / 3);
-    position: relative;
+.bottom-section .wrapper1 div,
+.top-section .wrapper1 div {
     left: 32px;
 }
-.top-section .wrapper2 div {
-    position: relative;
-    flex-basis: calc(100% / 3);
-    right: 32px;
-    height: 50%;
-}
+.top-section .wrapper2 div,
 .bottom-section .wrapper2 div {
-    flex-basis: calc(100% / 3);
-    height: 50%;
-    position: relative;
     right: 32px;
 }
+
 .top-section .wrapper1 .img1 {
     background-image: url(/img/cover-photo.png);
 }
@@ -192,19 +184,19 @@ p {
 .bottom-section .wrapper1 .img2 {
     background-image: url(/img/grill.png);
     background-blend-mode: lighten;
-    
 }
 .bottom-section .wrapper2 .cozyparagraph p {
     color: #394149;
 }
 .bottom-section .wrapper2 .img1 {
     background-image: url(/img/photo.png);
-    right: 32px;
+   
 }
 .bottom-section .wrapper2 .img2 {
     background-image: url(/img/portrait.png);
-    right: 32px;
+   
 }
+
 footer {
     display: flex;
     flex-direction: column;
