@@ -5,148 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>grid praktika</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="flex-box">
-        <header>
-            <nav class="navbar wrapper">
-                <div class="logo">
-                    <img src="/icons/Logo.png" alt="">
+    <main class="layout">
+        <aside class="navigation">
+            <div class="navigation logo">
+                <img src="/img/TESLA.png" alt="logo">
+            </div>
+            <!-- <div class="menu__burger">
+                <img src="/img/menu-icon.svg" alt="menu">
+            </div> -->
+            <div class="navigation__container">
+                <div class="navigation__links-list">
+                    <a href="#" class="navigation__link">
+                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <span>Reports</span>
+                    </a>
+                    <a href="#" class="navigation__link navigation__link--active">
+                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <span>Library</span></a>
+                    <a href="#" class="navigation__link">
+                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <span>People</span></a>
+                    <a href="#" class="navigation__link">
+                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <span>Activities</span></a>
                 </div>
-                <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">faq</a></li>
-                    <li><a href="">about</a></li>
-                    <li><a href="">careers</a></li>
-                    <li><a href="">contact us</a></li>
-                </ul>
-            </nav>
+                <h5 class="navigation__heading">Support</h5>
+                <div class="navigation__links-list">
+                    <a href="#" class="navigation__link">
+                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <span>Get started</span></a>
+                    <a href="#" class="navigation__link">
+                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <span>Settings</span></a>
+                </div>
+            </div>
+            <div class="navigation__account">
+                
+                <img src="/img/Photo.svg" alt="">
+                <h5 class="navigation__footer">Sam Wheller</h5>
+                <p class="navigation__paragraph">samwheller@example.com</p>
+            </div>
+        </aside>
+        <header class="header">
+
         </header>
-        <main>
-            <section class="hero container">
-                <div class="img-comand">
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. </p>
-                    <button>apply her</button>
-                </div>
-            </section>
-            <section class="top-section container">
-                <div class="wrapper1">
-                    <div class="top-content">
-                        <div class="image img1"></div>
-                        <div class="paragraph">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                    <div class="bottom-content">
-                        <div class="icon">
-                            <img src="/icons/cover-icon.png" alt="cover-icon">
-                        </div>
-                        <div class="cozyparagraph">
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-                        </div>
-                        <div class="image img2"></div>
-                    </div>
-                </div>
-                <div class="wrapper2">
-                    <div class="top-content">
-                        <div class="image img3"></div>
-                        <div class="image img4"></div>
-                        <div class="icon">
-                            <img src="/img/diamond-cover.png" alt="diamond">
-                        </div>
-                    </div>
-                    <div class="bottom-content">
-                        <div class="icon">
-                            <img src="/icons/winner.png" alt="winner">
-                        </div>
-                        <div class="paragraph">
-                            <p class="black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="bottom-section container">
-                <div class="wrapper1">
-                    <div class="top-content">
-                        <div class="image img5"></div>
-                        <div class="icon" id="icon1">
-                            <img src="/icons/image.png" alt="icons">
-                        </div>
-                        <div class="icon">
-                            <img src="/icons/Vector.png" alt="vector">
-                        </div>
-                    </div>
-                    <div class="bottom-content">
-                        <div class="paragraph">
-                            <p class="black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div class="image img6"></div>
-                    </div>
-                </div>
-                <div class="wrapper2">
-                    <div class="top-content">
-                        <div class="paragraph">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div class="image img7"></div>
-                    </div>
-                    <div class="bottom-content">
-                        <div class="image img8"></div>
-                        <div class="icon">
-                            <img src="/icons/logoipsum-220 1.png" alt="cover-icon">
-                        </div>
-                        <div class="cozyparagraph">
-                            <p class="black">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footerfirst">
-                <div class="footer-logo">
-                    <img src="/icons/Logo.png" alt="logo">
-                </div>
-                <p>Some information about this company.</p>
-                <div class="footer-social">
-                    <img src="/icons/facebook-icon.svg" alt="facebook">
-                    <img src="/icons/google-icon.svg" alt="google">
-                    <img src="/icons/twitter-button.svg" alt="twitter">
-                    <img src="/icons/linkedin-icon.svg" alt="linkedin">
-                </div>
-            </div>
-            <div class="footersecond">
-                <div>
-                    <p>1234 NW Bobcat Lane, St. Robert, MO 65584-5678.</p>
-                </div>
-                <div>
-                    <p>2022© All rights reserved </p>
-                </div>
-            </div>
-        </footer>
-    </div>
+        <section class="h-content">
+
+        </section>
+    </main> 
 </body>
 
 </html>
