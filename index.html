@@ -16,12 +16,9 @@
 <body>
     <main class="layout">
         <aside class="navigation">
-            <div class="navigation logo">
+            <div class="navigation__logo">
                 <img src="/img/TESLA.png" alt="logo">
             </div>
-            <!-- <div class="menu__burger">
-                <img src="/img/menu-icon.svg" alt="menu">
-            </div> -->
             <div class="navigation__container">
                 <div class="navigation__links-list">
                     <a href="#" class="navigation__link">
@@ -29,22 +26,22 @@
                         <span>Reports</span>
                     </a>
                     <a href="#" class="navigation__link navigation__link--active">
-                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <div class="navigation__link-image navigation__link-image--lightning"></div>
                         <span>Library</span></a>
                     <a href="#" class="navigation__link">
-                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <div class="navigation__link-image navigation__link-image--people"></div>
                         <span>People</span></a>
                     <a href="#" class="navigation__link">
-                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <div class="navigation__link-image navigation__link-image--vector"></div>
                         <span>Activities</span></a>
                 </div>
                 <h5 class="navigation__heading">Support</h5>
                 <div class="navigation__links-list">
                     <a href="#" class="navigation__link">
-                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <div class="navigation__link-image navigation__link-image--lamp"></div>
                         <span>Get started</span></a>
                     <a href="#" class="navigation__link">
-                        <div class="navigation__link-image navigation__link-image--arrow"></div>
+                        <div class="navigation__link-image navigation__link-image--settings"></div>
                         <span>Settings</span></a>
                 </div>
             </div>
@@ -56,7 +53,24 @@
             </div>
         </aside>
         <header class="header">
-
+            <div class="header-container">
+                <div class="header-container-main">
+                    <h1>Library</h1>
+                    <nav class="header-nav">
+                        <ul class="header-menu">
+                            <li><a href="" class="header-menu-button header-menu-button-active">Courses</a></li>
+                            <li><a href="" class="header-menu-button">Quizes</a></li>
+                            <li><a href="" class="header-menu-button">Qestions</a></li>
+                            <li><a href="" class="header-menu-button">Resourses</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <button class="header-button"><span class="icon-plus"></span>Topic</button>
+            </div>
+            <div class="header-container">
+                <div class="search-bar"><label for="search-input" class="icon-search"></label><input class="search-input" type="text" id="search-input" placeholder="Search"></div>
+                <div class="secondary-button"><span class="icon-view"></span>View Table</div>
+            </div>
         </header>
         <section class="h-content">
 
